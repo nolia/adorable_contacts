@@ -1,3 +1,4 @@
 <resources>
   <string name="app_name">Adorable Contacts</string>
+  <string name="empty_list">Nothing there…</string>
 </resources>
