@@ -1,4 +1,12 @@
 <resources>
   <string name="app_name">Adorable Contacts</string>
   <string name="empty_list">Nothing there…</string>
+  <string name="label_name">Name</string>
+  <string name="label_nickname">Nickname</string>
+  <string name="label_email">Email</string>
+  <string name="label_phone">Phone</string>
+  <string name="label_other">other</string>
+  <string name="label_website">Website</string>
+  <string name="label_postal_address">Postal Adress</string>
+  <string name="details">Details</string>
 </resources>

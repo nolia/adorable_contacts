@@ -5,7 +5,6 @@
   <uses-permission android:name="android.permission.INTERNET"/>
 
   <application
-    android:name=".App"
     android:allowBackup="true"
     android:icon="@mipmap/ic_launcher"
     android:label="@string/app_name"
@@ -15,7 +14,7 @@
 
     <activity-alias
       android:name=".LauncherActivity"
-      android:targetActivity=".ui.MainActivity">
+      android:targetActivity=".ui.ListActivity_">
       <intent-filter>
         <action android:name="android.intent.action.MAIN"/>
         <category android:name="android.intent.category.LAUNCHER"/>
@@ -23,8 +22,16 @@
     </activity-alias>
 
     <activity
-      android:name=".ui.MainActivity"
+      android:name=".ui.ListActivity_"
+      android:label="@string/app_name"
       />
+
+    <activity
+      android:name=".ui.DetailsActivity_"
+      android:label="@string/details"
+      android:parentActivityName=".ui.ListActivity_"
+      />
+
 
   </application>
 </manifest>

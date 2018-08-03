@@ -5,6 +5,9 @@ import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 
+import org.androidannotations.annotations.EBean;
+
+@EBean(scope = EBean.Scope.Singleton)
 public class AvatarProvider {
 
   private static final String URI_FORMAT = "https://api.adorable.io/avatars/285/%s.png";
@@ -18,6 +21,7 @@ public class AvatarProvider {
 
 
   public void loadAvatar(final Contact contact, final ImageView target) {
+    // Glide will use caching automatically.
     Glide.with(context)
         .load(buildUri(contact))
         .into(target);
